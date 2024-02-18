@@ -91,9 +91,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-`;
+}`;
 
 const Gradient = styled.div`
     z-index: 3;

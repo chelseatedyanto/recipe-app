@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import styled from "styed-components";
+import React, { useState, useEffect } from "react";
+import styled from "styled-components";
 import {motion} from "framer-motion";
 import {Link, useParams} from "react-router-dom";
 
