@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styed-components";
+import styled from "styled-components";
 import {FaSearch} from 'react-icons/fa';
 import {useNavigate} from 'react-router-dom';
 
@@ -9,14 +9,14 @@ function Search() {
     const [input, setInput] = useState("");
     const navigate = useNavigate();
 
-    // Only the search area is reload (not the whle page)
+    // Only the search area is reload (not the while page)
     const submitHandler = (e) => {
         e.preventDefault();
         navigate('/searched/' + input);
     }; 
 
     return (
-        <FormStyle>
+        <FormStyle onSubmit={submitHandler}>
             <div>
                 <FaSearch></FaSearch>
                 <input 

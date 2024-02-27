@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import styled from "styed-components";
+import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 import {Link, useParams} from "react-router-dom";
 
-function Search() {
+function Searched() {
 
     const [searchedRecipes, setsearchedRecipes] = useState([]);
     let params = useParams;
