@@ -105,4 +105,4 @@ const Gradient = styled.div`
 
 `;
 
-export default Popular
+export default Popular;

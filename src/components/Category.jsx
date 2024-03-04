@@ -27,6 +27,7 @@ function Category(){
     );
 };
 
+
 const List = styled.div`
     display: flex;
     justify-content: center;
@@ -65,4 +66,4 @@ const SLink = styled(NavLink)`
     }
 `;
 
-export default Category;
+export default Category; 

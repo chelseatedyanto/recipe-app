@@ -102,4 +102,4 @@ const Gradient = styled.div`
 
 `;
 
-export default Veggie
+export default Veggie;

@@ -55,4 +55,4 @@ const FormStyle = styled.form`
     }
 `
 
-export default Search;
+export default Search; 
