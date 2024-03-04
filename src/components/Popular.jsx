@@ -39,7 +39,7 @@ const getPopular=async () => {
                         arrows: false,
                         pagination: false,
                         drag:'free',
-                        gap:'5rem',
+                        gap:'2rem',
 
                     }}>
                     {popular.map((recipe)=>
@@ -69,11 +69,11 @@ min-height: 5rem;
 border-radius: 2rem;
 overflow: hidden;
 img{
-    border-radius: 2rem;
+    border-radius: 1rem;
     position: relative;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 200%;
+    height: 200%;
     object-fit: cover;
 
 }
@@ -84,10 +84,10 @@ p{
     bottom: 0%;
     transform: translate(-50%, 0%);
     color: white;
-    width: 100%;
+    width: 80%;
     text-align: center;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.6rem;
     height:40%;
     display: flex;
     justify-content: center;
