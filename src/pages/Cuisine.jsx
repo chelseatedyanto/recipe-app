@@ -5,10 +5,10 @@ import {Link, useParams} from "react-router-dom";
 
 function Cuisine() {
     const [cuisine, setCuisine] = useState([]);
-    let params = useParams;
+    let params = useParams();
 
     const getCuisine =  async (name) => {
-        const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`); 
+        const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}&number=9`); 
         const recipes = await data.json();
         setCuisine(recipes.results);
     };
@@ -20,7 +20,7 @@ function Cuisine() {
 
     return (
         <Grid
-        ainimate={{opacity: 1}}
+        animate={{opacity: 1}}
         initial={{opacity: 0}}
         exit={{opacity: 0}}
         transition={{duration: 0.5}}
@@ -40,15 +40,17 @@ function Cuisine() {
 };
 
 const Grid = styled(motion.div)`
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-gap: 1rem;
 `;
 
 const Card = styled.div`
     img {
         width:100%;
-        border-radius:2rem;
+        border-radius:1rem;
     }
     a {
         text-decoration: none;
@@ -56,6 +58,7 @@ const Card = styled.div`
     h4 {
         text-align: center;
         padding: 1rem;
+        font-size:0.7rem;
     }
 `;
     

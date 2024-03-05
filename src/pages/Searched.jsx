@@ -5,10 +5,10 @@ import {Link, useParams} from "react-router-dom";
 function Searched() {
 
     const [searchedRecipes, setsearchedRecipes] = useState([]);
-    let params = useParams;
+    let params = useParams();
 
     const getSearched =  async (name) => {
-        const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${name}`);
+        const data = await fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_API_KEY}&query=${name}&number=9`);
         const recipes = await data.json();
         setsearchedRecipes(recipes.results);
     };
@@ -34,22 +34,26 @@ function Searched() {
 }
 
 const Grid = styled.div`
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    grid-gap: 1rem;
 `;
 
 const Card = styled.div`
     img {
         width:100%;
-        border-radius:2rem;
+        border-radius:1rem;
     }
     a {
         text-decoration: none;
+        
     }
     h4 {
         text-align: center;
         padding: 1rem;
+        font-size: 0.7rem;
     }
 `;
 
