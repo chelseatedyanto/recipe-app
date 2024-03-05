@@ -5,7 +5,7 @@ import '@splidejs/splide/dist/css/themes/splide-default.min.css';
 import {Link} from 'react-router-dom';
 
 function Veggie() {
-
+    localStorage.removeItem("veggie");
     const[veggie, setVeggie] = useState([]);
 
     useEffect(() => {
@@ -25,8 +25,6 @@ const getVeggie=async () => {
         setVeggie(data.recipes);
         console.log(data.recipes);
     }
-
-    
 };
 
   return (

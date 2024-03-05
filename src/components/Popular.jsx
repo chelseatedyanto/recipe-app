@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 
 //these 2 components are gonna go to the homepage (home.jsx)
 function Popular() {
-
+    localStorage.removeItem("popular");
     const[popular, setPopular] = useState([]);
 
     useEffect(() => {
@@ -27,8 +27,6 @@ const getPopular=async () => {
         setPopular(data.recipes);
         console.log(data.recipes);
     }
-
-    
 };
 
   return (<div>
