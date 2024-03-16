@@ -33,10 +33,11 @@ const getVeggie=async () => {
                     <h3>Veggie Options</h3>
                     <Splide options={{
                         perPage:4,
-                        arrows: false,
-                        pagination: false,
+                        arrows: true,
+                        pagination: true,
                         drag:'free',
                         gap:'2rem',
+
 
                     }}>
                     {veggie.map((recipe)=>
@@ -44,9 +45,9 @@ const getVeggie=async () => {
                         <SplideSlide key={recipe.id}>
                         <Card>
                         <Link to ={'/recipe/' + recipe.id}>
-                            <p>{recipe.title}</p>
+                            
                             <img src={recipe.image} alt={recipe.title} />
-                            <Gradient />
+                            <p>{recipe.title}</p>
                         </Link>
                         </Card>
                         </SplideSlide>
@@ -62,42 +63,41 @@ const Wrapper = styled.div`
     margin: 4rem 0rem;
 `;
 const Card = styled.div`
-min-height: 5rem;
-border-radius: 2rem;
-overflow: hidden;
-img{
+  height:8rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+
+  img {
     border-radius: 1rem;
     position: relative;
     left: 0;
-    width: 200%;
-    height: 200%;
+    width: 150%; 
+    height: auto; 
     object-fit: cover;
+    
+  }
 
-}
-p{
+  p {
     position: absolute;
     z-index: 10;
+    bottom: 0;
     left: 50%;
-    bottom: 0%;
-    transform: translate(-50%, 0%);
+    transform: translateX(-50%);
     color: white;
-    width: 80%;
-    text-align: center;
     font-weight: 600;
     font-size: 0.6rem;
-    height:40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}`;
-
-const Gradient = styled.div`
-    z-index: 3;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5));
-
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 20%, rgba(0,0,0,0.4) 30%,rgba(0,0,0,0.5) 50%,rgba(0,0,0,0.6) 70%, rgba(0,0,0,0.8) 100%); 
+    padding:0.8rem;
+    width:100%;
+    text-align:center;
+  }
+  &:hover {
+    transform: scale(0.95); 
+    transition: transform 0.2s ease;
+}
 `;
+
+
 
 export default Veggie;

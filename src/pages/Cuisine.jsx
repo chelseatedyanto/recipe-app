@@ -60,6 +60,13 @@ const Card = styled.div`
         padding: 1rem;
         font-size:0.7rem;
     }
+    &:hover {
+        img {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); 
+            transform: scale(1.02); 
+            transition: transform 0.2s ease-in-out, box-shadow 0.3s ease;
+        }
+    }
 `;
     
 export default Cuisine;

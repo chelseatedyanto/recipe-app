@@ -59,23 +59,26 @@ const DetailWrapper = styled.div`
     margin-bottom: 3rem;
     flex-direction: column;
     text-align: center; 
+    
     .active{
-        background: linear-gradient(35deg, #494949, #313131);
+        background: rgb(0,0,0);
         color: white;
     }
     h2{
         margin-bottom: 1rem;
-        font-size:0.9rem;
-        
+        font-size:1.2rem;
+        color:rgb(36, 36, 36);
     }
     li{
         font-size: 0.8rem;
         line-height: 1.3rem;
+        color:rgb(36, 36, 36);
     }
     ul{
         margin-top: 1rem;
         text-align: justify;
         width: 60%;
+        color:rgb(36, 36, 36);
     }
     img{
         width: 70%; 
@@ -89,6 +92,7 @@ const DetailWrapper = styled.div`
         font-weight:350;
         line-height:1.5rem;
         margin-top: 1rem;
+        color:rgb(36, 36, 36);
     }
    
 `;

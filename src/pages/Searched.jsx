@@ -45,6 +45,7 @@ const Card = styled.div`
     img {
         width:100%;
         border-radius:1rem;
+        
     }
     a {
         text-decoration: none;
@@ -55,6 +56,7 @@ const Card = styled.div`
         padding: 1rem;
         font-size: 0.7rem;
     }
+    
 `;
 
 export default Searched;
