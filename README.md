@@ -17,9 +17,9 @@ While following the tutorial for the back-end and API setup, I designed a custom
 
 <p align="">
   <img width="400" src="/public/recipe1.png">
-  <img width="370" src="/public/recipe2.png">
+  <img width="365" src="/public/recipe2.png">
   <img width="400" src="/public/recipe3.png">
-  <img width="380" src="/public/recipe4.png">
+  <img width="375" src="/public/recipe4.png">
 </p>
 
 ## Available Scripts
