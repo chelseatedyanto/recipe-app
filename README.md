@@ -15,6 +15,10 @@ While following the tutorial for the back-end and API setup, I designed a custom
 - **Popular Options**: Provide the current popular recipe trends.
 - **Custom UI**: Designed a unique user interface to enhance usability and aesthetics.
 
+<p align="center">
+  <img width="900" src="/public/recipe1.png">
+</p>
+
 ## Available Scripts
 
 In the project directory, you can run:
