@@ -15,8 +15,11 @@ While following the tutorial for the back-end and API setup, I designed a custom
 - **Popular Options**: Provide the current popular recipe trends.
 - **Custom UI**: Designed a unique user interface to enhance usability and aesthetics.
 
-<p align="center">
-  <img width="900" src="/public/recipe1.png">
+<p align="">
+  <img width="400" src="/public/recipe1.png">
+  <img width="400" src="/public/recipe2.png">
+  <img width="400" src="/public/recipe3.png">
+  <img width="400" src="/public/recipe4.png">
 </p>
 
 ## Available Scripts
