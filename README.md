@@ -2,6 +2,19 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# About this Project
+This project is a Recipe App built using React, following [Dev Ed's tutorial on YouTube](https://www.youtube.com/watch?v=xc4uOzlndAk). This app allows users to search recipes, view coooking instructions, list ingredients, provide vegetarian options, and give popular recipe recommendations. 
+
+While following the tutorial for the back-end and API setup, I designed a custom user interface to make the app uniquely my own.
+
+## Features
+
+- **Recipe Search**: Find recipes by ingredient, cuisine, or keyword.
+- **Ingredient Details**: Get detailed information about the ingredients in each recipe.
+- **Vegetarian Options**: Provide a curated vegetarian recipe recommendations.
+- **Popular Options**: Provide the current popular recipe trends.
+- **Custom UI**: Designed a unique user interface to enhance usability and aesthetics.
+
 ## Available Scripts
 
 In the project directory, you can run:
